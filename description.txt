@@ -1,0 +1,18 @@
+Task2: Discover top 10 trending topics in the news articles given in **Data-1**.
+    
+    What I Understood From the Problem ?
+    -> In this task, we have to retrieve the headings of the data from the file and on the basis
+       of word count we have to identify which topics are in trend. For this, we are given a file 
+       from which we have collected all the headings and stored it in a single string. We have 
+       tokenized the string and removed all the stop words from the string. Then we have stemmed 
+       the words using NLTK. We have calculated the frequency of every word in the string, sorted 
+       the string and returned the top 10 words.
+
+    Algorithm Used:
+    
+    Step 1. Parse CSV file and convert it into list.
+    Step 2. Select heading column from each row of the list and store it in a string.
+    Step 3. Tokenize the string using stop word set.
+    Step 4. Stem the words in the string using NLTK.
+    Step 5. Calculate the frequency of every word in the string and sort them.
+    Step 6. Return the top 10 words.
